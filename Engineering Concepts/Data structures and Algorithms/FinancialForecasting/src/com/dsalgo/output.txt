@@ -1,0 +1,4 @@
+Current Investment : ₹50000.0
+Growth Rate        : 8.0%
+Forecast Period    : 5 years
+Predicted Value    : ₹73466.40

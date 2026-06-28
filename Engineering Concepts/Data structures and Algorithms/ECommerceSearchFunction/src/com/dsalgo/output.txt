@@ -1,0 +1,5 @@
+Linear Search:
+Product ID: 3, Name: Study Table, Category: HomeDecor
+
+Binary Search:
+Product ID: 4, Name: Car, Category: Vehicle
