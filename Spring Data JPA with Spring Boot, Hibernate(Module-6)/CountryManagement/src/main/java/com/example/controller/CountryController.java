@@ -24,4 +24,32 @@ public class CountryController {
     public List<Country> all() {
         return service.getAllCountries();
     }
+    @GetMapping("/name/{name}")
+    public Country getCountryByName(@PathVariable String name) {
+        return service.getCountryByName(name);
+    }
+
+    @GetMapping("/capital/{capital}")
+    public Country getCountryByCapital(@PathVariable String capital) {
+        return service.getCountryByCapital(capital);
+    }
+
+    @GetMapping("/startswith/{prefix}")
+    public List<Country> getCountriesStartingWith(@PathVariable String prefix) {
+        return service.getCountriesStartingWith(prefix);
+    }
+
+    @GetMapping("/contains/{word}")
+    public List<Country> getCountriesContaining(@PathVariable String word) {
+        return service.getCountriesContaining(word);
+    }
+    @GetMapping("/hql/{name}")
+    public Country getCountryByNameHQL(@PathVariable String name) {
+        return service.getCountryByNameHQL(name);
+    }
+
+    @GetMapping("/native/{capital}")
+    public Country getCountryByCapitalNative(@PathVariable String capital) {
+        return service.getCountryByCapitalNative(capital);
+    }
 }
