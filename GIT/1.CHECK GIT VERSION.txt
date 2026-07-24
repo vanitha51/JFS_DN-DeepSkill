@@ -1,0 +1,37 @@
+1.CHECK GIT VERSION
+git --version
+2. configure user level for user ID and email ID
+git config --global user.name "Vanitha"
+git config --global user.email "vanitha@cognizant.com"
+3.To check everything went properly
+git config --global --list
+o/p-:
+user.name = Vanitha
+user.email = vanitha@cognizant.com
+4. Integrating notepad++.exe to Git
+notepad++
+o/p:- 
+opens the notepad++
+5.Configure
+git config --global core.editor "notepad++.exe -multiInst -nosession"
+5. Verify connection
+git config --global -e
+
+6.Add a file to source code repo
+git init GitDemo
+7.Verify initialization
+ls -al
+8. create file "welcome.txt"
+echo "Welcome to the version control" >> welcome.txt
+9.Verify file
+ls -al
+10. Verify Content
+cat welcome.txt
+11.Check git status
+git status
+12.Add file
+git add welcome.txt
+13.Commit
+git commit -m "Added welcome.txt"
+14.Push 
+git push origin master
